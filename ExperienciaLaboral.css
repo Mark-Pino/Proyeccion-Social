@@ -1,0 +1,56 @@
+/* Establecer el fondo de la página */
+body {
+    background-color: white;                    /* Cambiamos el fondo de la página a blanco */
+    font-family: Arial, Helvetica, sans-serif;    /* Establecemos la fuente del texto */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: red;                 /* Cambiamos el fondo de la barra de navegación a rojo */
+    display: flex;                           /* Utilizamos un diseño flexible para alinear elementos */
+    justify-content: space-between;          /* Alineamos elementos a los lados de la barra */
+    align-items: center;                     /* Centramos verticalmente los elementos en la barra */
+}
+
+/* Estilos para los botones en la barra de navegación */
+button {
+    background-color: transparent;          /* Fondo de botones transparente */
+    border: none;                           /* Sin bordes alrededor de los botones */
+    color: blue;                          /* Texto en color azul (código de color para blanco) */
+    cursor: pointer;                        /* Cambia el cursor al pasar sobre los botones */
+    font-size: 50px;                        /* Establecemos el tamaño del texto en los botones */
+}
+
+/* Estilos para el título */
+#titulo {
+    text-align: center;                     /* Centramos el texto del título */
+    font-size: 30px;                        /* Tamaño del texto del título */
+    color: aliceblue;                     /* Color del texto del título (blanco) */
+}
+
+/* Estilos para el contenedor principal */
+#cuadro {
+    justify-content: space-between;     /* Alineamos los elementos principales con espacio entre ellos */
+}
+
+/* Estilos para las filas en el contenedor principal */
+#fila {
+    display: flex;                  /* Utilizamos un diseño flexible para las filas */
+    margin-top: 3%;                 /* Agregamos un margen superior del 3% */
+}
+
+/* Estilos para los subtítulos */
+#subtitulo {
+    background: linear-gradient(to bottom, red, white); /* Fondo degradado de rojo a blanco (de arriba a abajo) */
+    border-radius: 40px;            /* Radio de 40px para crear bordes redondeados */
+    width: 30%;                     /* Ancho del elemento subtítulo */
+    text-align: center;             /* Centramos el texto en los subtítulos */
+    color: black;                 /* Color del texto en los subtítulos (negro) */
+}
+
+/* Estilos para los párrafos */
+p {
+    color: black; /* Color del texto en los párrafos (negro) */
+    border: 30px; /* Añadimos un borde de 30px */
+    margin-left: 3%; /* Agregamos un margen izquierdo del 3% */
+}

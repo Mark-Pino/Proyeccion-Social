@@ -1,0 +1,82 @@
+/* Establecer el fondo de la página */
+body {
+    background: linear-gradient(to right, rgb(36, 212, 243), white);                   /* Cambiamos el fondo de la página a blanco */
+    font-family: Arial, Helvetica, sans-serif;    /* Establecemos la fuente del texto */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: red;                 /* Cambiamos el fondo de la barra de navegación a rojo */
+    display: flex;                           /* Utilizamos un diseño flexible para alinear elementos */
+    justify-content: space-between;          /* Alineamos elementos a los lados de la barra */
+    align-items: center;                     /* Centramos verticalmente los elementos en la barra */
+}
+
+/* Estilos para los botones en la barra de navegación */
+button {
+    background-color: transparent;          /* Fondo de botones transparente */
+    border: none;                           /* Sin bordes alrededor de los botones */
+    color: blue;                          /* Texto en color azul (código de color para blanco) */
+    cursor: pointer;                        /* Cambia el cursor al pasar sobre los botones */
+    font-size: 50px;                        /* Establecemos el tamaño del texto en los botones */
+}
+
+/* Estilos para el título */
+#titulo {
+    text-align: center;                     /* Centramos el texto del título */
+    font-size: 30px;                        /* Tamaño del texto del título */
+    color: aliceblue;                     /* Color del texto del título (blanco) */
+}
+
+.icono1{
+    background-color: blue;          /* Fondo de botones transparente */
+    border: none;                           /* Sin bordes alrededor de los botones */
+    cursor: pointer;                        /* Cambia el cursor al pasar sobre los botones */
+    font-size: 50px;                        /* Establecemos el tamaño del texto en los botones */
+    border-radius: 15px;            /* Radio de 40px para crear bordes redondeados */
+    width: 5%;  
+    text-align: center;
+}
+.icono2{
+    background: linear-gradient(to bottom, purple, orange);;          /* Fondo de botones transparente */
+    border: none;                           /* Sin bordes alrededor de los botones */
+    cursor: pointer;                        /* Cambia el cursor al pasar sobre los botones */
+    font-size: 50px;                        /* Establecemos el tamaño del texto en los botones */
+    border-radius: 15px;            /* Radio de 40px para crear bordes redondeados */
+    width: 5%;  
+    text-align: center;
+}
+.icono3{
+    background-color: black;          /* Fondo de botones transparente */
+    border: none;                           /* Sin bordes alrededor de los botones */
+    cursor: pointer;                        /* Cambia el cursor al pasar sobre los botones */
+    font-size: 50px;                        /* Establecemos el tamaño del texto en los botones */
+    border-radius: 15px;            /* Radio de 40px para crear bordes redondeados */
+    width: 5%;  
+    text-align: center;
+}
+.icono4{
+    background-color: green;          /* Fondo de botones transparente */
+    border: none;                           /* Sin bordes alrededor de los botones */
+    cursor: pointer;                        /* Cambia el cursor al pasar sobre los botones */
+    font-size: 50px;                        /* Establecemos el tamaño del texto en los botones */
+    border-radius: 15px;            /* Radio de 40px para crear bordes redondeados */
+    width: 5%;  
+    text-align: center;
+}
+#filas{
+    display: flex;
+    margin-top: 2%;
+}
+a{
+    color: white;
+    
+}
+#texto{
+    background-color: red;
+    font-size: 35px;
+    border-radius: 20px;            /* Radio de 40px para crear bordes redondeados */
+    text-align: center;             /* Centramos el texto en los subtítulos */
+    width: 30%; 
+    margin-left: 3%;
+}

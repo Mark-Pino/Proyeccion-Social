@@ -1,0 +1,82 @@
+/* Estilo para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para la barra de navegación */
+nav {
+  background-color: #a81919;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav p {
+  font-size: 24px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Estilo para los encabezados h1 */
+
+
+/* Estilo para las imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para las secciones con clase "navbar-right" */
+.navbar-right {
+  text-align: right;
+}
+#creatividad {
+  background-color: #a81919;
+  padding: 26px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+#deportistas {
+  background-color: #a81919;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+#talentos {
+  background-color: #f0f0f0;
+  padding: 20px;
+  color: #a81919;
+}
+#contenedor {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 5px solid #ddd;
+  border-radius: 100px;
+  margin: 20px 10;
+  display: flex; /* Utilizar Flexbox */
+  justify-content: space-between;
+  
+
+
+}
+.contenido {
+  flex: 1; /* Hace que ambos contenedores ocupen igualmente el espacio disponible */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px 10px; /* Agrega un margen horizontal entre los contenedores */
+}

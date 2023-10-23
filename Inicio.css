@@ -1,0 +1,162 @@
+/* Definición de propiedades CSS personalizadas (variables) que se pueden utilizar en toda la hoja del estilo. */
+:root{
+    /* Panel de colores de la pagina */
+    --linia-separacion: #523434;                    /* Color de línea de separación */
+    --sombra: rgba(0, 0, 0, .06);                   /* Sombra con opacidad */
+    --sombra-hover: rgba(0, 0, 0, .1);              /* Sombra al hacer hover */
+    --nombre-perfil: #f0522a;                       /* Color del nombre de perfil */
+    --menu: #f7f7f7;                                /* Color de fondo del menú */
+    --menu-text: #353535;                           /* Color del texto del menú */
+    --menu-text-hover: #CE7D35;                     /* Color del texto del menú al hacer hover */
+    --sub-menu: #333333;                            /* Color de fondo del submenú */
+    --sub-menu-text: #ffffff;                       /* Color del texto del submenú */
+}
+
+/* Estilos para el cuerpo y la página HTML */
+html, body {
+    height:100%;                                        /* Establece la altura de la página HTML y el cuerpo al 100% del alto del viewport. */
+} 
+
+/* Estilos para el fondo del cuerpo de la página */
+body {
+    background-image: url("img/fondo.jpg");             /* Establece una imagen de fondo para el cuerpo de la página. */
+    background-size: auto 100%;                         /* Ajusta el tamaño de la imagen de fondo automáticamente en el ancho y al 100% de alto. */
+    background-repeat: no-repeat;                       /* Evita que la imagen de fondo se repita. */
+    background-position: left top;                      /* Posiciona la imagen de fondo en la parte superior izquierda. */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;                                      /* Utiliza el modelo de caja flexible (flexbox) para el contenedor principal. */
+    align-items: center;                                /* Centra verticalmente el contenido dentro del contenedor. */
+    justify-content: center;                            /* Centra horizontalmente el contenido dentro del contenedor. */
+    height: 100vh;                                      /* Hace que el contenedor ocupe el 100% del alto del viewport. */
+    padding: 0 20px;                                    /* Agrega relleno de 0 píxeles arriba/abajo y 20 píxeles a la izquierda/derecha del contenedor. */
+}
+
+/* Estilos para el contenedor de la tarjeta */
+.card-container {
+    display: flex;                                      /* Utiliza el modelo de caja flexible (flexbox) para el contenedor de la tarjeta. */
+    width: 600px;                                       /* Establece un ancho fijo de 600 píxeles para la tarjeta. */
+    height: auto;                                       /* Permite que la altura de la tarjeta se ajuste automáticamente según su contenido. */
+}
+
+/* Estilos para la sección de encabezado */
+.header {
+    border-right: 1px solid var(--linia-separacion);    /* Agrega un borde vertical a la derecha con un píxel de ancho, usando el color definido en la variable --linia-separacion. */
+    padding: 20px;                                      /* Agrega relleno interno de 20 píxeles al encabezado. */
+    padding: 20px;                                      /* Agrega relleno interno de 20 píxeles al encabezado. */
+    text-align: center;                                 /* Centra el texto en el encabezado horizontalmente. */
+}
+
+/* Estilos para los enlaces dentro del encabezado */
+.header a {
+    position: relative;                                 /* Establece una posición relativa para los enlaces en el encabezado. */
+    display: block;                                     /* Los enlaces se muestran como bloques, ocupando todo el ancho disponible. */
+}
+
+/* Estilos para la imagen dentro del encabezado */
+.header img {
+    border-radius: 20%;                                 /* Aplica un borde redondeado del 20% a la imagen. */
+    box-shadow: 0 0 0 8px var(--sombra);                /* Agrega una sombra con opacidad alrededor de la imagen, utilizando el color definido en la variable --sombra. */
+    margin: 20px 30px;                                  /* Establece márgenes exteriores de 20 píxeles arriba/abajo y 30 píxeles izquierda/derecha para la imagen. */
+    transition: .2s;                                    /* Aplica una transición suave de 0.2 segundos a la imagen para animar cambios de estilo. */
+}
+
+/* Estilos para el título y subtítulo en el encabezado */
+.header h2 {
+    color: var(--nombre-perfil);                        /* Establece el color del texto del título en el encabezado utilizando el valor de la variable --nombre-perfil. */
+}
+
+.header h4 {
+    margin-bottom: 20px;                                /* Agrega un margen inferior de 20 píxeles al subtítulo en el encabezado. */
+}
+
+/* Estilos para la imagen al hacer hover en un enlace */
+.header a:hover img {
+    box-shadow: 0 0 0 12px var(--sombra-hover);         /* Aplica una sombra con opacidad al hacer hover en la imagen del enlace, utilizando el color definido en la variable --sombra-hover. */
+}
+
+/* Estilos para la barra de navegación */
+.navegacion{
+    width: 300px;                                       /* Establece un ancho fijo de 300 píxeles para la barra de navegación. */
+    margin: 20px auto;                                  /* Agrega un margen de 20 píxeles en la parte superior e inferior y automáticamente centra la barra de navegación horizontalmente. */
+    background: var(--menu);                            /* Establece el color de fondo de la barra de navegación utilizando el valor de la variable --menu. */
+    border-radius: 15px;                                /* Aplica un borde redondeado del 15% a la barra de navegación. */
+    height: 80px;                                       /* Establece la altura de la barra de navegación en 80 píxeles. */
+    margin-left: 30px;                                  /* Agrega un margen izquierdo de 30 píxeles a la barra de navegación. */
+    border-style: ridge;                                /* Establece un estilo de borde "ridge" (relieve) a la barra de navegación. */
+}
+
+/* Estilos para la lista desordenada (ul) dentro de la barra de navegación */
+.navegacion ul{
+    list-style: none;                                   /* Quita los marcadores de lista de la lista desordenada, haciendo que se vea como un menú. */
+}
+
+/* Estilos para elementos de lista (li) que son hijos directos de elementos con clase .menu */
+.menu > li{
+    position: relative;                                 /* Establece una posición relativa para los elementos de lista, lo que permite controlar el posicionamiento de elementos hijos. */
+    display: inline-block;                              /* Los elementos de lista se muestran en línea, uno al lado del otro. */
+}
+
+/* Estilos para enlaces (a) que son hijos directos de elementos de lista li que son hijos directos de elementos con clase .menu */
+.menu > li > a{
+    display: block;                                     /* Los enlaces se muestran como bloques, ocupando todo el ancho disponible dentro de los elementos de lista. */
+    padding: 15px 20px;                                 /* Agrega relleno a los enlaces (15 píxeles arriba/abajo y 20 píxeles izquierda/derecha). */
+    color: var(--menu-text);                            /* Establece el color del texto de los enlaces utilizando el valor de la variable --menu-text. */
+    font-family: 'Open sans';                           /* Establece la fuente del texto de los enlaces como 'Open sans'. */
+    text-decoration: none;                              /* Quita la decoración de subrayado de los enlaces. */
+}
+
+/* Estilos para enlaces (a) dentro de elementos de lista li al hacer hover */
+.menu li a:hover{
+    color: var(--menu-text-hover);                      /* Cambia el color del texto de los enlaces al hacer hover utilizando el valor de la variable --menu-text-hover. */
+    transition: all .3s;                                /* Aplica una transición suave de 0.3 segundos a todos los cambios de estilo al hacer hover en los enlaces. */
+}
+
+/* Estilos para el submenú */
+.submenu{
+    position: absolute;                                 /* Establece la posición absoluta para el submenú, lo que lo posiciona de forma absoluta en relación con su elemento padre más cercano con una posición distinta de "static". */
+    background: var(--sub-menu);                        /* Establece el color de fondo del submenú utilizando el valor de la variable --sub-menu. */
+    width: 104%;                                        /* Establece el ancho del submenú un poco más ancho que su contenedor para evitar desbordamientos. */
+    visibility: hidden;                                 /* Inicialmente, el submenú no es visible. */
+    opacity: 0;                                         /* Inicialmente, el submenú es completamente transparente. */
+    transition: opacity 1.5s;                           /* Aplica una transición en la propiedad de opacidad que dura 1.5 segundos. */
+    border-radius: 15px;                                /* Aplica un borde redondeado al submenú con un radio de 15 píxeles. */
+}
+
+/* Estilos para los enlaces dentro del submenú */
+.submenu li a{
+    margin: 6px;                                        /* Agrega márgenes a los enlaces dentro del submenú. */
+    display: block;                                     /* Los enlaces se muestran como bloques, ocupando todo el ancho disponible dentro del submenú. */
+    padding: 8px;                                       /* Agrega relleno a los enlaces dentro del submenú. */
+    color: var(--sub-menu-text);                        /* Establece el color del texto de los enlaces utilizando el valor de la variable --sub-menu-text. */
+    font-family: 'Open sans';                           /* Establece la fuente del texto de los enlaces como 'Open sans'. */
+    text-decoration: none;                              /* Quita la decoración de subrayado de los enlaces dentro del submenú. */
+}
+
+/* Estilos para mostrar el submenú al hacer hover en elementos de lista de menú */
+.menu li:hover .submenu{
+    visibility: visible;                                /* Hace que el submenú sea visible cuando se realiza un hover sobre el elemento de lista de menú correspondiente. */
+    opacity: 1;                                         /* Hace que el submenú sea completamente visible al hacer hover. */
+}
+
+/* Estilos específicos para pantallas con un ancho máximo de 640 píxeles (media query) */
+@media (max-width:640px){
+    .card-container {
+        display: block;                                 /* Cambia el modelo de visualización de la tarjeta para que se muestre como un bloque en lugar de en línea, apilando los elementos verticalmente. */
+        width: 450px;                                   /* Reduce el ancho de la tarjeta a 450 píxeles. */
+    }
+
+    .header {
+        padding: 20px 20px 5px 20px;                    /* Ajusta el relleno del encabezado con valores específicos para cada lado (arriba, derecha, abajo, izquierda). */
+    }
+
+    .navegacion {
+        padding: 5px 20px 20px 20px;                    /* Ajusta el relleno de la barra de navegación con valores específicos para cada lado (arriba, derecha, abajo, izquierda). */
+    }
+    
+    .header h4 {
+        margin: 0;                                      /* Elimina el margen inferior del subtítulo en el encabezado, estableciéndolo en 0. */
+    }
+}

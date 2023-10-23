@@ -1,0 +1,60 @@
+/* Establecer el fondo de la página */
+body {
+    background-color: white;                    /* Cambiamos el fondo de la página a blanco */
+    font-family: Arial, Helvetica, sans-serif;    /* Establecemos la fuente del texto */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: red;                 /* Cambiamos el fondo de la barra de navegación a rojo */
+    display: flex;                           /* Utilizamos un diseño flexible para alinear elementos */
+    justify-content: space-between;          /* Alineamos elementos a los lados de la barra */
+    align-items: center;                     /* Centramos verticalmente los elementos en la barra */
+}
+/* Estilos para los botones en la barra de navegación */
+button {
+    background-color: transparent;          /* Fondo de botones transparente */
+    border: none;                           /* Sin bordes alrededor de los botones */
+    color: blue;                          /* Texto en color azul (código de color para blanco) */
+    cursor: pointer;                        /* Cambia el cursor al pasar sobre los botones */
+    font-size: 50px;                        /* Establecemos el tamaño del texto en los botones */
+}
+/* Estilos para el título */
+#titulo {
+    text-align: center;                     /* Centramos el texto del título */
+    font-size: 30px;                        /* Tamaño del texto del título */
+    color: aliceblue;                     /* Color del texto del título (blanco) */
+}
+#fila{
+    background: linear-gradient(to bottom, rgb(214, 128, 128), white); /* Fondo degradado de rojo a blanco (de arriba a abajo) */
+    border-radius: 40px;            /* Radio de 40px para crear bordes redondeados */
+    display: flex;
+    margin-top: 2%;
+}
+#subtitulo{
+    background: linear-gradient(to bottom, red, white); /* Fondo degradado de rojo a blanco (de arriba a abajo) */
+    border-radius: 40px;            /* Radio de 40px para crear bordes redondeados */
+    width: 35%;                     /* Ancho del elemento subtítulo */
+    text-align: center;             /* Centramos el texto en los subtítulos */
+    color: black;                   /* Color del texto en los subtítulos (negro) */
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+p {
+    color: black; /* Color del texto en los párrafos (negro) */
+    border: 30px; /* Añadimos un borde de 30px */
+    margin-left: 3%; /* Agregamos un margen izquierdo del 3% */
+    margin-top: 3%;
+}
+#contenido{
+    display: flex; /* Usamos flexbox para colocar los div en una sola columna */
+    flex-direction: column; /* Columna es la dirección principal */
+}
+img {
+    width: 300px; /* Cambia el ancho a 200 píxeles */
+    height: 200px; /* Cambia la altura a 150 píxeles */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */ 
+}

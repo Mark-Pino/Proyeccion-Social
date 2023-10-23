@@ -1,0 +1,65 @@
+/* Estilos para la barra de navegación */
+#navigation {
+  background-color: rgb(223, 15, 15); /* Color de fondo rojo oscuro */
+  color: #fff; /* Color del texto blanco */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 10px; /* Espaciado interno de 4 píxeles arriba/abajo y 10 píxeles izquierda/derecha */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el título de navegación */
+.nav-title {
+  font-size: 30px; /* Tamaño de la letra del título */
+  font-family: Arial; /* Fuente del texto */
+}
+
+/* Estilos para la disposición en fila de los logros */
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: Arial; /* Fuente del texto */
+}
+
+/* Estilos para los elementos de logro */
+.achievement {
+  flex: 0 1 calc(45% - 20px);
+  margin: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+  padding: 20px; /* Espaciado interno de 20 píxeles */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para claridad */
+}
+
+/* Estilos para las imágenes de logro dentro de .achievement */
+.achievement-image img {
+  width: 500px; /* Ancho de la imagen */
+  height: 500px; /* Altura de la imagen */
+  object-fit: cover; /* Mantiene la proporción y cubre completamente el contenedor */
+}
+
+/* Estilos para el texto de logro dentro de .achievement */
+.achievement-text {
+  text-align: center;
+  background-color: rgb(182, 177, 177); /* Fondo gris con opacidad */
+  display: inline-block; /* Ajusta el contenedor al contenido de texto */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para los botones de navegación */
+.nav-button {
+  background: none; /* Elimina el fondo del botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  padding: 0; /* Elimina el relleno del botón */
+}
+
+/* Estilos para los iconos dentro de .nav-button */
+.nav-button i {
+  font-size: 40px; /* Tamaño del icono */
+  color: blue; /* Color del icono azul */
+  padding: 10px; /* Espaciado interno del icono */
+}

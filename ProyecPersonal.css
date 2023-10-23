@@ -1,0 +1,71 @@
+nav {
+    background-color: #af0808; /* Código de color para rojo */
+    color: #fffdfd; /* Código de color para blanco */
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    font-weight: bold; /* Establece el texto en negrita */
+
+}
+#titulo{
+    color: #eaeaf1; 
+
+}
+nav button {
+    background-color: transparent;
+    border: none;
+    color: #1909ff; /* Código de color para blanco */
+    cursor: pointer;
+    font-size: 40px;
+}
+
+#titulo01{
+    
+    background: red; /* Fondo degradado de rojo a blanco */
+    border-radius: 40px; /* Radio de 10px para crear bordes redondeados */
+    width: 30%;
+    text-align: center;
+    color: black;
+    background-color: #e90e0e; /* Color de fondo del contenedor */
+    margin: auto;;
+    margin-top: 20px;
+    
+}
+
+#fila1 {
+    display: flex;
+
+}
+
+#titulo02{
+    
+    background: red; /* Fondo degradado de rojo a blanco */
+    border-radius: 100px; /* Radio de 10px para crear bordes redondeados */
+    width: 30%;
+    text-align: center;
+    color: black;
+    background-color: #e90e0e; /* Color de fondo del contenedor */
+    margin: auto;;
+    margin-top: 20px;
+
+}
+#fila2{
+    display: flex;
+}
+#filass{
+    margin-top: 1%;
+}
+img{
+        width: 1000px; /* Ancho de la imagen */
+        height: 500px; /* Altura de la imagen */
+        object-fit: cover; /* Mantiene la proporción y cubre completamente el contenedor */
+    
+    margin-left: 4%;
+    margin-right: 4%;
+}
+p{
+    font-size: 30px;
+    margin-left: 3%;
+}
