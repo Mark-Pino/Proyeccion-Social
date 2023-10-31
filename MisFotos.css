@@ -1,0 +1,84 @@
+/*Estilos para el encabezado*/
+header {
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+/*Estilos para el título en el encabezado*/
+#titulo {
+    color: white; /*Color de la fuente*/
+    font-size: 40px; /*Tamaño de fuente deseado*/ 
+}
+
+/* Estilo para el botón en la esquina superior izquierda */
+#botones-navbar-left {
+    position: absolute;
+    top: 75px; /* Ajusta la distancia desde la parte superior */
+    left: 60px; /* Ajusta la distancia desde la izquierda */
+}
+
+/* Estilo para el botón en la esquina superior derecha */
+#botones-navbar {
+    position: absolute;
+    top: 75px; /* Ajusta la distancia desde la parte superior */
+    right: 60px; /* Ajusta la distancia desde la derecha */
+}
+
+#Evento_de_Robotica{
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+}
+
+#Evento_Deportivo{
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+}
+
+#Evento_de_Viajes_Escolares{
+    background-color: red;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+}
+
+#Evento_del_Corso_Alegorico{
+    background-color: red;
+    text-align: right;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    
+}
+
+#cards {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 5px solid #ddd;
+    border-radius: 100px;
+    margin: 20px 10;
+    display: flex; /* Utiliza un contenedor flexible */
+    justify-content: space-around; /* Espacio uniforme entre elementos en el eje principal (horizontal) */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente fila cuando no quepan en el ancho de la pantalla */
+    width: 57%;
+    
+  }
+
+.contenido {
+    flex: 1; /* Hace que ambos contenedores ocupen igualmente el espacio disponible */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px 10px; /* Agrega un margen horizontal entre los contenedores */
+  }
+
+ 

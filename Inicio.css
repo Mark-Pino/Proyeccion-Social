@@ -37,7 +37,7 @@ body {
 /* Estilos para el contenedor de la tarjeta */
 .card-container {
     display: flex;                                      /* Utiliza el modelo de caja flexible (flexbox) para el contenedor de la tarjeta. */
-    width: 600px;                                       /* Establece un ancho fijo de 600 píxeles para la tarjeta. */
+    width: auto;                                       /* Establece un ancho fijo de 600 píxeles para la tarjeta. */
     height: auto;                                       /* Permite que la altura de la tarjeta se ajuste automáticamente según su contenido. */
 }
 
